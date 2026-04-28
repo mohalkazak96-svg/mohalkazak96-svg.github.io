@@ -1,0 +1,17 @@
+# Secrets / tokens
+token
+*.token
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log

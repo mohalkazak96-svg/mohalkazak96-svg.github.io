@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="محمد طارق القزق — مهندس سحابة وبنية تحتية وأمن في الكويت. استشارات حرة في الحوسبة السحابية الخاصة، VMware، Nutanix، أمن الشبكات، والتعافي من الكوارث." />
+  <meta name="theme-color" content="#1d4ed8" />
+  <title>محمد طارق القزق — مهندس سحابة وبنية تحتية</title>
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="alternate" hreflang="en" href="../" />
+  <link rel="alternate" hreflang="ar" href="./" />
+  <link rel="alternate" hreflang="x-default" href="../" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+
+  <meta property="og:title" content="محمد طارق القزق — مهندس سحابة وبنية تحتية" />
+  <meta property="og:description" content="استشارات حرة في الحوسبة السحابية الخاصة، VMware، Nutanix، أمن الشبكات، والتعافي من الكوارث." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ar_KW" />
+  <meta property="og:locale:alternate" content="en_US" />
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav" aria-label="القائمة الرئيسية">
+    <div class="nav-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark" aria-hidden="true">MA</span>
+        <span class="brand-text">محمد القزق</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">نبذة</a></li>
+        <li><a href="#services">الخدمات</a></li>
+        <li><a href="#process">آلية العمل</a></li>
+        <li><a href="#skills">التقنيات</a></li>
+        <li><a href="#certifications">الشهادات</a></li>
+        <li>
+          <button type="button" class="theme-toggle" aria-label="تبديل الوضع الداكن" aria-pressed="false">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </button>
+        </li>
+        <li><a href="../" class="lang-switch" aria-label="Switch to English">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          <span>English</span>
+        </a></li>
+        <li><a href="#contact" class="nav-cta">تواصل معي</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="فتح القائمة" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="top" class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">
+        <span class="eyebrow-dot" aria-hidden="true"></span>
+        متاح للمشاريع والاستشارات الحرة
+      </p>
+      <h1 class="hero-title">
+        استشارات سحابية وبنية تحتية،<br/>
+        <span class="accent">مصممة لتنمو معك.</span>
+      </h1>
+      <p class="hero-subtitle">
+        أنا محمد — مهندس سحابة وبنية تحتية وأمن، أعمل بشكل حرّ مع شركات في دول الخليج وخارجها.
+      </p>
+      <p class="hero-blurb">
+        أصمّم وأحمي وأطوّر بيئات السحابة الخاصة والشبكات — لتعمل بنيتك التحتية بسرعة أكبر، وتبقى متاحة لفترة أطول، وتتوسّع مع نمو عملك بدلاً من أن تعيقه.
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">
+          ابدأ مشروعاً
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transform: scaleX(-1);"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="../assets/Mohammed-Al-Kazaq-CV.pdf" class="btn btn-ghost" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          تحميل السيرة الذاتية
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <span class="hero-stat-value">+٥</span>
+          <span class="hero-stat-label">سنوات خبرة</span>
+        </div>
+        <div>
+          <span class="hero-stat-value">٩</span>
+          <span class="hero-stat-label">شهادات احترافية</span>
+        </div>
+        <div>
+          <span class="hero-stat-value">٢٤ ساعة</span>
+          <span class="hero-stat-label">وقت الرد</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <p class="section-eyebrow">نبذة</p>
+      <h2 class="section-title">مهندس متخصص، عند الطلب.</h2>
+
+      <div class="about-grid">
+        <div class="about-body">
+          <p>
+            أساعد الشركات على بناء وحماية وتطوير بنيتها التحتية لتقنية المعلومات — دون تكلفة والتزام التوظيف بدوام كامل. سواء كنت تنتقل إلى السحابة الخاصة، أو تعزّز شبكتك، أو تخطّط للتعافي من الكوارث، تحصل على هندسة عملية من شخص يعمل على هذه التقنيات يومياً.
+          </p>
+          <p>
+            أعمل عادةً مع <strong>مديري تقنية المعلومات، وموزّعي التكنولوجيا، والشركات النامية</strong> الذين يحتاجون إلى تنفيذ مشروع محدد بإتقان. تتراوح المشاركات من مراجعات معمارية فردية ودعم ما قبل البيع، إلى تصميم وتنفيذ شامل لحلول السحابة والشبكات والأمن.
+          </p>
+          <p>
+            ما تحصل عليه: نطاق واضح، تسعير ثابت، تحديثات منتظمة للتقدم، توثيق كامل عند التسليم، وتواصل مباشر مع المهندس الذي يقوم بالعمل — وليس مع مدير حساب.
+          </p>
+        </div>
+
+        <aside class="about-side" aria-label="نظرة سريعة">
+          <h4>نظرة سريعة</h4>
+          <ul class="about-facts">
+            <li><span class="k">الموقع</span><span class="v">الكويت</span></li>
+            <li><span class="k">التخصص</span><span class="v">السحابة وأمن الشبكات</span></li>
+            <li><span class="k">الخبرة</span><span class="v">+٥ سنوات عملية</span></li>
+            <li><span class="k">طريقة العمل</span><span class="v">عن بُعد · حضورياً (الخليج)</span></li>
+            <li><span class="k">اللغات</span><span class="v">العربية والإنجليزية</span></li>
+            <li><span class="k">وقت الرد</span><span class="v">خلال ٢٤ ساعة</span></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section section-alt">
+    <div class="container">
+      <p class="section-eyebrow">خدمات العمل الحر</p>
+      <h2 class="section-title">ما الذي أقدّمه</h2>
+      <p class="section-lead">
+        استشارات عملية في السحابة والمحاكاة الافتراضية وأمن الشبكات — من التصميم على بياض إلى تحسين البيئات القائمة.
+      </p>
+
+      <div class="services-grid">
+
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 1 0 0-9h-1.8A7 7 0 1 0 4 16.9"/><polyline points="8 17 12 21 16 17"/><line x1="12" y1="12" x2="12" y2="21"/></svg>
+          </div>
+          <h3>تصميم السحابة الخاصة</h3>
+          <p>تصميم وحجم وتنفيذ بيئات VMware (vSphere، vSAN، NSX، Cloud Director) و Nutanix لخدمات IaaS و BaaS و DRaaS.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>تصميم الشبكات والأمن</h3>
+          <p>تبديل وتوجيه وتقسيم شبكات المؤسسات. نشر الجدران النارية (Palo Alto، FortiGate، Sophos) والعزل الدقيق عبر NSX.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>
+          </div>
+          <h3>النسخ الاحتياطي والتعافي من الكوارث</h3>
+          <p>تصميم النسخ الاحتياطي بـ Cohesity، معمارية DRaaS، تخطيط RPO/RTO، استرداد الأنظمة عبر Cristie BMR، والتحقق من خطط التعافي.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1.8"/></svg>
+          </div>
+          <h3>SD-WAN والاتصال</h3>
+          <p>تنفيذ VMware SD-WAN (VeloCloud) و Fortinet SD-WAN. تصميم وتشغيل NSX Advanced Load Balancer (AVI).</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg>
+          </div>
+          <h3>هندسة ما قبل البيع</h3>
+          <p>توثيق HLD/LLD، تحديد قوائم المواد (BoM)، الردود على طلبات العروض (RFP)، العروض التقنية، وتقديم الحلول للعملاء.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>تدقيق وتحسين البنية التحتية</h3>
+          <p>مراجعات الأداء والسعة باستخدام vRealize و Zabbix و Lenovo XClarity. تحديد الاختناقات، تحسين حجم أحمال العمل، وتعزيز الوضع الأمني.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW I WORK -->
+  <section id="process" class="section">
+    <div class="container">
+      <p class="section-eyebrow">آلية العمل</p>
+      <h2 class="section-title">من أول مكالمة إلى الإطلاق.</h2>
+      <p class="section-lead">
+        عملية بسيطة وشفافة مصمّمة لإزالة الغموض. تعرف دائماً ما يحدث، وما الخطوة التالية، وكم ستكلّف.
+      </p>
+
+      <div class="process-grid">
+        <article class="process-step">
+          <h3>مكالمة تعارف</h3>
+          <p>محادثة مجانية مدتها ٣٠ دقيقة لفهم بيئتك وأهدافك ومتطلباتك. بدون أي التزام، وبدون عرض مبيعات.</p>
+        </article>
+
+        <article class="process-step">
+          <h3>النطاق والعرض</h3>
+          <p>عرض مكتوب يتضمّن المخرجات والجدول الزمني والسعر الثابت. لا توجد أسعار بالساعة أو تقديرات مفتوحة — تعرف الرقم قبل أن نبدأ.</p>
+        </article>
+
+        <article class="process-step">
+          <h3>التصميم والتنفيذ</h3>
+          <p>هندسة عملية مع تحديثات أسبوعية للتقدّم. التوثيق يُبنى جنباً إلى جنب مع العمل، وليس كفكرة لاحقة عند النهاية.</p>
+        </article>
+
+        <article class="process-step">
+          <h3>التسليم والدعم</h3>
+          <p>توثيق كامل، نقل المعرفة لفريقك، و٣٠ يوماً من الدعم المجاني بعد الإطلاق للتأكد من استقرار كل شيء.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <p class="section-eyebrow">التقنيات</p>
+      <h2 class="section-title">التقنيات التي أعمل بها</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3><span class="skill-dot"></span> السحابة والمحاكاة الافتراضية</h3>
+          <ul class="tag-list">
+            <li>VMware vSphere</li>
+            <li>VMware vSAN</li>
+            <li>VMware Cloud Director</li>
+            <li>VCDA</li>
+            <li>vRealize Suite</li>
+            <li>Nutanix</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3><span class="skill-dot"></span> الشبكات والأمن</h3>
+          <ul class="tag-list">
+            <li>NSX-T &amp; NSX-V</li>
+            <li>NSX Advanced LB (AVI)</li>
+            <li>VMware SD-WAN</li>
+            <li>Fortinet SD-WAN</li>
+            <li>Palo Alto Firewalls</li>
+            <li>FortiGate Firewalls</li>
+            <li>Sophos</li>
+            <li>التبديل والتوجيه</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3><span class="skill-dot"></span> النسخ الاحتياطي والتعافي</h3>
+          <ul class="tag-list">
+            <li>Cohesity</li>
+            <li>DRaaS</li>
+            <li>Cristie BMR</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3><span class="skill-dot"></span> المراقبة وأنظمة التشغيل</h3>
+          <ul class="tag-list">
+            <li>Zabbix</li>
+            <li>Lenovo XClarity</li>
+            <li>Windows Server</li>
+            <li>Linux</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <p class="section-eyebrow">الشهادات والتدريب</p>
+      <h2 class="section-title">خبرة موثّقة</h2>
+
+      <div class="cert-grid">
+        <div class="cert-card"><span class="cert-vendor">Nutanix</span><h3>NCP — Multicloud Infrastructure 6</h3><p>صدرت في مارس ٢٠٢٥</p></div>
+        <div class="cert-card"><span class="cert-vendor">VMware</span><h3>VCP-NV — Network Virtualization 2022</h3><p>صدرت في أبريل ٢٠٢٢</p></div>
+        <div class="cert-card"><span class="cert-vendor">Cisco</span><h3>CCNP Enterprise</h3><p>أغسطس ٢٠٢٠ – أغسطس ٢٠٢٣</p></div>
+        <div class="cert-card"><span class="cert-vendor">Cisco</span><h3>CCNA Routing &amp; Switching</h3><p>مايو ٢٠٢٠ – أغسطس ٢٠٢٣</p></div>
+        <div class="cert-card"><span class="cert-vendor">Cisco</span><h3>Specialist — Enterprise Core</h3><p>صدرت في يونيو ٢٠٢٠</p></div>
+        <div class="cert-card"><span class="cert-vendor">Cisco</span><h3>Specialist — Enterprise Adv. Infra Implementation</h3><p>صدرت في أغسطس ٢٠٢٠</p></div>
+        <div class="cert-card"><span class="cert-vendor">Cohesity</span><h3>Platform Advanced Operator</h3><p>صدرت في مارس ٢٠٢٢</p></div>
+        <div class="cert-card"><span class="cert-vendor">VMware</span><h3>SD-WAN: Deploy &amp; Manage [V4.x]</h3><p>تدريب عند الطلب</p></div>
+        <div class="cert-card"><span class="cert-vendor">VMware</span><h3>NSX Advanced LB: Deploy &amp; Manage [V21]</h3><p>تدريب عند الطلب</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="container contact-inner">
+      <p class="section-eyebrow">تواصل</p>
+      <h2 class="section-title">لنبنِ شيئاً يصمد في وجه التحديات.</h2>
+      <p class="contact-blurb">
+        مفتوح للمشاركة في استشارات البنية التحتية للمؤسسات، ومشاريع ما قبل البيع، والتعاون التقني في مجالات السحابة والمحاكاة الافتراضية وأمن الشبكات.
+      </p>
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:mohalkazak96@gmail.com?subject=%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9&amp;body=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%85%D8%AD%D9%85%D8%AF%D8%8C%0A%0A%D8%A3%D9%88%D8%AF%D9%91%20%D9%85%D9%86%D8%A7%D9%82%D8%B4%D8%A9%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9.%0A" data-copy-msg="تم نسخ البريد الإلكتروني">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </span>
+          <span class="contact-label">البريد الإلكتروني</span>
+          <span class="contact-value">mohalkazak96@gmail.com</span>
+        </a>
+        <a class="contact-card" href="https://wa.me/96590927301?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%85%D8%AD%D9%85%D8%AF%D8%8C%20%D8%A3%D9%88%D8%AF%D9%91%20%D9%85%D9%86%D8%A7%D9%82%D8%B4%D8%A9%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9" target="_blank" rel="noopener">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/></svg>
+          </span>
+          <span class="contact-label">واتساب</span>
+          <span class="contact-value" dir="ltr">+965 9092 7301</span>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/in/mohammed-al-kazaq-b023661b2" target="_blank" rel="noopener">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </span>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">Mohammed Al-Kazaq</span>
+        </a>
+        <div class="contact-card">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          <span class="contact-label">الموقع</span>
+          <span class="contact-value">الكويت</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> محمد طارق القزق</span>
+      <span>موقع ثابت · بدون تتبع · <a href="../">English</a></span>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -3,27 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mohammed Tareq Al-Kazaq — Cloud, Infrastructure & Security Engineer based in Kuwait. Specializing in private cloud, VMware, Nutanix, network security, and DRaaS." />
-  <title>Mohammed Tareq Al-Kazaq — Cloud, Infrastructure & Security Engineer</title>
+  <meta name="description" content="Mohammed Tareq Al-Kazaq — Cloud, Infrastructure & Security Engineer based in Kuwait. Freelance consulting in private cloud, VMware, Nutanix, network security, and disaster recovery." />
+  <meta name="theme-color" content="#1d4ed8" />
+  <title>Mohammed Tareq Al-Kazaq — Cloud & Infrastructure Engineer</title>
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="alternate" hreflang="en" href="./" />
+  <link rel="alternate" hreflang="ar" href="./ar/" />
+  <link rel="alternate" hreflang="x-default" href="./" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mohammed Tareq Al-Kazaq — Cloud & Infrastructure Engineer" />
+  <meta property="og:description" content="Freelance consulting in private cloud, VMware, Nutanix, network security, and disaster recovery." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_KW" />
 </head>
 <body>
   <!-- NAV -->
-  <nav class="nav">
+  <nav class="nav" aria-label="Primary">
     <div class="nav-inner">
       <a href="#top" class="brand">
-        <span class="brand-mark">MA</span>
+        <span class="brand-mark" aria-hidden="true">MA</span>
         <span class="brand-text">Mohammed Al-Kazaq</span>
       </a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">How I Work</a></li>
+        <li><a href="#skills">Technologies</a></li>
         <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button type="button" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </button>
+        </li>
+        <li><a href="ar/" class="lang-switch" aria-label="التبديل إلى العربية">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          <span>العربية</span>
+        </a></li>
+        <li><a href="#contact" class="nav-cta">Get in touch</a></li>
       </ul>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -33,155 +74,188 @@
 
   <!-- HERO -->
   <header id="top" class="hero">
-    <div class="hero-bg" aria-hidden="true"></div>
     <div class="container hero-inner">
-      <p class="eyebrow">Cloud · Infrastructure · Security</p>
+      <p class="eyebrow">
+        <span class="eyebrow-dot" aria-hidden="true"></span>
+        Available for freelance engagements
+      </p>
       <h1 class="hero-title">
-        Mohammed Tareq <span class="accent">Al-Kazaq</span>
+        Cloud &amp; infrastructure consulting,<br/>
+        <span class="accent">designed to scale.</span>
       </h1>
       <p class="hero-subtitle">
-        Engineering enterprise-grade private cloud at
-        <strong>LEAN Services</strong>, Kuwait.
+        I'm Mohammed — a freelance Cloud, Infrastructure &amp; Security engineer working with businesses across the GCC and beyond.
       </p>
       <p class="hero-blurb">
-        5+ years designing, deploying, and operating VMware, Nutanix,
-        Cohesity, and next-gen network security across the Core Technology
-        team — from rack to runbook.
+        I design, secure, and optimize private cloud and network environments — so your infrastructure runs faster, stays online longer, and scales with your business instead of holding it back.
       </p>
       <div class="hero-cta">
-        <a href="#contact" class="btn btn-primary">Get in touch</a>
-        <a href="#experience" class="btn btn-ghost">See experience &rarr;</a>
+        <a href="#contact" class="btn btn-primary">
+          Start a project
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="assets/Mohammed-Al-Kazaq-CV.pdf" class="btn btn-ghost" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV
+        </a>
       </div>
-      <ul class="hero-meta">
-        <li><span>📍</span> Salmiya, Kuwait</li>
-        <li><span>💼</span> LEAN Services · Core Technology</li>
-        <li><span>🎓</span> NCP-MCI · CCNP · VCP-NV</li>
-      </ul>
+
+      <div class="hero-stats">
+        <div>
+          <span class="hero-stat-value">5+</span>
+          <span class="hero-stat-label">Years experience</span>
+        </div>
+        <div>
+          <span class="hero-stat-value">9</span>
+          <span class="hero-stat-label">Vendor certifications</span>
+        </div>
+        <div>
+          <span class="hero-stat-value">24h</span>
+          <span class="hero-stat-label">Response time</span>
+        </div>
+      </div>
     </div>
   </header>
 
   <!-- ABOUT -->
   <section id="about" class="section">
-    <div class="container two-col">
-      <div>
-        <p class="section-eyebrow">About</p>
-        <h2 class="section-title">Cloud-native infrastructure, secured end-to-end.</h2>
-      </div>
-      <div class="about-body">
-        <p>
-          I'm a Cloud, Infrastructure & Security Engineer with over five years
-          at <strong>LEAN Services</strong>, a private cloud service provider
-          in Kuwait. I started in the Services Management Center (SMC) handling
-          24/7 operations and progressed to the Core Technology team, where I
-          now lead cloud, virtualization, networking, and security
-          implementations.
-        </p>
-        <p>
-          My day-to-day spans the full solution lifecycle — from architecture
-          and HLD/LLD design, to deployment, performance tuning, DR readiness,
-          and vendor escalation. I act as the technical focal point with major
-          vendors (Lenovo, Palo Alto, Fortinet, VMware, Cohesity, Nutanix) and
-          coordinate with every ISP in Kuwait for enterprise connectivity.
-        </p>
-        <p>
-          I also support pre-sales engagements: translating customer
-          requirements into right-sized technical architectures, and presenting
-          designs to enterprise clients across Kuwait.
-        </p>
+    <div class="container">
+      <p class="section-eyebrow">About</p>
+      <h2 class="section-title">A senior engineer, on demand.</h2>
+
+      <div class="about-grid">
+        <div class="about-body">
+          <p>
+            I help businesses build, secure, and modernize their IT infrastructure — without the cost and commitment of a full-time hire. Whether you're moving to private cloud, hardening your network, or designing for disaster recovery, you get hands-on engineering from someone who runs this stack every day.
+          </p>
+          <p>
+            I typically work with <strong>IT managers, technology resellers, and growing businesses</strong> who need a focused project delivered well. Engagements range from one-off architecture reviews and pre-sales support, to end-to-end design and implementation of cloud, network, and security solutions.
+          </p>
+          <p>
+            What you get: clear scope, fixed pricing, regular progress updates, full documentation at handover, and direct communication with the engineer doing the work — not an account manager.
+          </p>
+        </div>
+
+        <aside class="about-side" aria-label="At a glance">
+          <h4>At a glance</h4>
+          <ul class="about-facts">
+            <li><span class="k">Location</span><span class="v">Kuwait</span></li>
+            <li><span class="k">Specialization</span><span class="v">Cloud &amp; Network Security</span></li>
+            <li><span class="k">Experience</span><span class="v">5+ years hands-on</span></li>
+            <li><span class="k">Engagement</span><span class="v">Remote &middot; On-site (GCC)</span></li>
+            <li><span class="k">Languages</span><span class="v">English &amp; Arabic</span></li>
+            <li><span class="k">Response</span><span class="v">Within 24 hours</span></li>
+          </ul>
+        </aside>
       </div>
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience" class="section section-alt">
+  <!-- SERVICES -->
+  <section id="services" class="section section-alt">
     <div class="container">
-      <p class="section-eyebrow">Experience</p>
-      <h2 class="section-title">Career at LEAN Services</h2>
+      <p class="section-eyebrow">Freelance Services</p>
+      <h2 class="section-title">What I offer</h2>
+      <p class="section-lead">
+        Hands-on consulting for cloud, virtualization, and network security — from greenfield design to optimization of existing environments.
+      </p>
 
-      <div class="timeline">
+      <div class="services-grid">
 
-        <article class="timeline-item">
-          <div class="timeline-meta">
-            <span class="timeline-date">May 2021 — Present</span>
-            <span class="timeline-loc">Kuwait</span>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 1 0 0-9h-1.8A7 7 0 1 0 4 16.9"/><polyline points="8 17 12 21 16 17"/><line x1="12" y1="12" x2="12" y2="21"/></svg>
           </div>
-          <div class="timeline-card">
-            <h3>Cloud &amp; Security Engineer</h3>
-            <p class="timeline-org">LEAN Services · Core Technology Team</p>
-
-            <h4>Core Technology</h4>
-            <ul>
-              <li>Design, implement, and manage private cloud infrastructure environments.</li>
-              <li>Manage IaaS, BaaS, and DRaaS solutions.</li>
-              <li>Administer VMware environments (vSphere, vSAN, NSX-V, NSX-T, Cloud Director).</li>
-              <li>Manage and operate Cohesity backup platforms.</li>
-              <li>Support and manage Nutanix infrastructure.</li>
-              <li>Generate performance &amp; capacity reports using VMware vRealize Suite.</li>
-              <li>Monitor infrastructure using Zabbix and Lenovo XClarity.</li>
-              <li>Reporting directly to the CTO.</li>
-            </ul>
-
-            <h4>Networking &amp; Security</h4>
-            <ul>
-              <li>Lead security architecture and implementation for LEAN's internal infrastructure.</li>
-              <li>Design and deploy enterprise network &amp; security solutions for customers.</li>
-              <li>Configure and manage firewalls (Palo Alto, FortiGate, Sophos).</li>
-              <li>Implement SDN and micro-segmentation using VMware NSX.</li>
-              <li>Deploy NSX Advanced Load Balancer (AVI).</li>
-              <li>Implement SD-WAN solutions (VMware SD-WAN / Fortinet).</li>
-              <li>Enterprise network design — switching, routing, segmentation, secure connectivity.</li>
-            </ul>
-
-            <h4>Vendor &amp; ISP Management</h4>
-            <ul>
-              <li>Technical focal point with Lenovo, Palo Alto, Fortinet, VMware, Cohesity, Nutanix.</li>
-              <li>Coordinate with all Kuwait ISPs for enterprise connectivity, MPLS, DIA, and cross-connect services.</li>
-              <li>Handle escalations, RMA processes, solution validation, and technical alignment.</li>
-            </ul>
-
-            <h4>Pre-Sales Engineering</h4>
-            <ul>
-              <li>Design technical solutions for enterprise clients with the sales team.</li>
-              <li>Translate business needs into technical architectures.</li>
-              <li>Prepare High-Level Designs (HLD) and Low-Level Designs (LLD).</li>
-              <li>Conduct technical presentations and solution demonstrations.</li>
-              <li>Provide BoM recommendations, technical sizing, and RFP responses.</li>
-            </ul>
-          </div>
+          <h3>Private Cloud Architecture</h3>
+          <p>VMware (vSphere, vSAN, NSX, Cloud Director) and Nutanix design, sizing, and deployment for IaaS, BaaS, and DRaaS workloads.</p>
         </article>
 
-        <article class="timeline-item">
-          <div class="timeline-meta">
-            <span class="timeline-date">Oct 2020 — Apr 2021</span>
-            <span class="timeline-loc">Kuwait</span>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
-          <div class="timeline-card">
-            <h3>Services Management Center Engineer</h3>
-            <p class="timeline-org">LEAN Services · SMC</p>
-            <ul>
-              <li>24/7 monitoring of private cloud infrastructure.</li>
-              <li>First-line troubleshooting for virtualization, networking, and security incidents.</li>
-              <li>Incident management and escalation to the Core Technology team.</li>
-              <li>Infrastructure performance and availability monitoring.</li>
-              <li>Direct customer communication during outages and incidents.</li>
-            </ul>
-          </div>
+          <h3>Network &amp; Security Design</h3>
+          <p>Enterprise switching, routing, and segmentation. Firewall deployment (Palo Alto, FortiGate, Sophos) and SDN micro-segmentation with NSX.</p>
         </article>
 
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>
+          </div>
+          <h3>Backup &amp; Disaster Recovery</h3>
+          <p>Cohesity backup design, DRaaS architecture, RPO/RTO planning, Cristie BMR for bare-metal recovery, and DR validation.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1.8"/></svg>
+          </div>
+          <h3>SD-WAN &amp; Connectivity</h3>
+          <p>VMware SD-WAN (VeloCloud) and Fortinet SD-WAN deployments. NSX Advanced Load Balancer (AVI) design and operations.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg>
+          </div>
+          <h3>Pre-Sales Engineering</h3>
+          <p>HLD/LLD documentation, BoM sizing, RFP responses, technical presentations, and customer-facing solution demonstrations.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>Infrastructure Audit &amp; Optimization</h3>
+          <p>Performance and capacity reviews using vRealize, Zabbix, and Lenovo XClarity. Identify bottlenecks, right-size workloads, harden security posture.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW I WORK -->
+  <section id="process" class="section">
+    <div class="container">
+      <p class="section-eyebrow">How I Work</p>
+      <h2 class="section-title">From first call to go-live.</h2>
+      <p class="section-lead">
+        A simple, transparent process designed to remove uncertainty. You always know what's happening, what's next, and what it costs.
+      </p>
+
+      <div class="process-grid">
+        <article class="process-step">
+          <h3>Discovery call</h3>
+          <p>A free 30-minute conversation to understand your environment, goals, and constraints. No commitment, no sales pitch.</p>
+        </article>
+
+        <article class="process-step">
+          <h3>Scope &amp; proposal</h3>
+          <p>A written proposal with deliverables, timeline, and fixed pricing. No hourly meters or open-ended estimates — you know the number before we start.</p>
+        </article>
+
+        <article class="process-step">
+          <h3>Design &amp; build</h3>
+          <p>Hands-on engineering with weekly progress updates. Documentation grows alongside the work, not as an afterthought at the end.</p>
+        </article>
+
+        <article class="process-step">
+          <h3>Handover &amp; support</h3>
+          <p>Full documentation, knowledge transfer to your team, and 30 days of complimentary support after go-live to make sure everything sticks.</p>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- SKILLS -->
-  <section id="skills" class="section">
+  <section id="skills" class="section section-alt">
     <div class="container">
-      <p class="section-eyebrow">Technical Skills</p>
-      <h2 class="section-title">The stack I run in production</h2>
+      <p class="section-eyebrow">Technologies</p>
+      <h2 class="section-title">Technologies I work with</h2>
 
       <div class="skills-grid">
         <div class="skill-card">
-          <div class="skill-icon" aria-hidden="true">☁️</div>
-          <h3>Cloud &amp; Virtualization</h3>
+          <h3><span class="skill-dot"></span> Cloud &amp; Virtualization</h3>
           <ul class="tag-list">
             <li>VMware vSphere</li>
             <li>VMware vSAN</li>
@@ -193,12 +267,11 @@
         </div>
 
         <div class="skill-card">
-          <div class="skill-icon" aria-hidden="true">🛡️</div>
-          <h3>Networking &amp; Security</h3>
+          <h3><span class="skill-dot"></span> Networking &amp; Security</h3>
           <ul class="tag-list">
             <li>NSX-T &amp; NSX-V</li>
             <li>NSX Advanced LB (AVI)</li>
-            <li>VMware SD-WAN (VeloCloud)</li>
+            <li>VMware SD-WAN</li>
             <li>Fortinet SD-WAN</li>
             <li>Palo Alto Firewalls</li>
             <li>FortiGate Firewalls</li>
@@ -208,8 +281,7 @@
         </div>
 
         <div class="skill-card">
-          <div class="skill-icon" aria-hidden="true">💾</div>
-          <h3>Backup &amp; DR</h3>
+          <h3><span class="skill-dot"></span> Backup &amp; DR</h3>
           <ul class="tag-list">
             <li>Cohesity</li>
             <li>DRaaS</li>
@@ -218,8 +290,7 @@
         </div>
 
         <div class="skill-card">
-          <div class="skill-icon" aria-hidden="true">📊</div>
-          <h3>Monitoring &amp; Systems</h3>
+          <h3><span class="skill-dot"></span> Monitoring &amp; Systems</h3>
           <ul class="tag-list">
             <li>Zabbix</li>
             <li>Lenovo XClarity</li>
@@ -232,7 +303,7 @@
   </section>
 
   <!-- CERTIFICATIONS -->
-  <section id="certifications" class="section section-alt">
+  <section id="certifications" class="section">
     <div class="container">
       <p class="section-eyebrow">Certifications &amp; Trainings</p>
       <h2 class="section-title">Verified expertise</h2>
@@ -252,35 +323,41 @@
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section">
+  <section id="contact" class="section section-alt">
     <div class="container contact-inner">
       <p class="section-eyebrow">Contact</p>
       <h2 class="section-title">Let's build something resilient.</h2>
       <p class="contact-blurb">
-        Open to enterprise infrastructure consulting, pre-sales engagements,
-        and technical collaboration across cloud, virtualization, and network
-        security.
+        Open to enterprise infrastructure consulting, pre-sales engagements, and technical collaboration across cloud, virtualization, and network security.
       </p>
       <div class="contact-grid">
-        <a class="contact-card" href="mailto:mohalkazak96@gmail.com">
-          <span class="contact-icon">✉️</span>
+        <a class="contact-card" href="mailto:mohalkazak96@gmail.com?subject=Project%20inquiry&amp;body=Hi%20Mohammed%2C%0A%0AI%27d%20like%20to%20discuss%20a%20project.%0A" data-copy-msg="Email copied to clipboard">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </span>
           <span class="contact-label">Email</span>
           <span class="contact-value">mohalkazak96@gmail.com</span>
         </a>
-        <a class="contact-card" href="tel:+96590927301">
-          <span class="contact-icon">📞</span>
-          <span class="contact-label">Phone</span>
+        <a class="contact-card" href="https://wa.me/96590927301?text=Hi%20Mohammed%2C%20I%27d%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/></svg>
+          </span>
+          <span class="contact-label">WhatsApp</span>
           <span class="contact-value">+965 9092 7301</span>
         </a>
-        <a class="contact-card" href="https://www.linkedin.com/" target="_blank" rel="noopener">
-          <span class="contact-icon">in</span>
+        <a class="contact-card" href="https://www.linkedin.com/in/mohammed-al-kazaq-b023661b2" target="_blank" rel="noopener">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </span>
           <span class="contact-label">LinkedIn</span>
           <span class="contact-value">Mohammed Al-Kazaq</span>
         </a>
-        <div class="contact-card contact-static">
-          <span class="contact-icon">📍</span>
+        <div class="contact-card">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
           <span class="contact-label">Location</span>
-          <span class="contact-value">Salmiya, Kuwait</span>
+          <span class="contact-value">Kuwait</span>
         </div>
       </div>
     </div>
@@ -289,7 +366,7 @@
   <footer class="footer">
     <div class="container footer-inner">
       <span>© <span id="year"></span> Mohammed Tareq Al-Kazaq</span>
-      <span class="footer-meta">Built with care · Static HTML · No tracking</span>
+      <span>Static site · No tracking · <a href="ar/">العربية</a></span>
     </div>
   </footer>
 
